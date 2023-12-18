@@ -12,7 +12,7 @@ namespace MPP_Client_C_
 {
     public partial class client : Form
     {
-        public Client cl = new Client(new Uri("wss://mppclone.com"), "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwZjExMTVlNWRiODQxZjg0ZWNkMzk3YzgiLCJpYXQiOjE3MDI2NjE0MzYsImlzcyI6ImFkbWluQG1wcGNsb25lLmNvbSJ9.BAGZ3Frcp8lLsDPkUlmWviTNaPp4JK3C9e8c4kuKi3A");
+        public Client cl = new Client(new Uri("wss://mppclone.com"), "REDACTED");
         public client()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace MPP_Client_C_
             cl.OnDynamic("hi", (msg) =>
             {
                 cl.setName("Csharp Client");
-                cl.setChannel("The Roleplay Room");
+                cl.setChannel("Room953703664773");
             });
         }
 
